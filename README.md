@@ -24,7 +24,7 @@ The pipeline automates data collection, cleaning, and storage, and powers a **Po
 ## 📊 Output 
 - **Dashboard Preview:**  
 
-![Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNTE0NWMzNGItZTI2NC00OGFlLThlOTctOWRkNTkyNDQ5MjAxIiwidCI6Ijg0YzMxY2EwLWFjM2ItNGVhZS1hZDExLTUxOWQ4MDIzM2U2ZiIsImMiOjZ9)
+![Power BI Dashboard](https://github.com/Chrisstinaa7/NASA_apod-data-pipeline/blob/main/dashboard/Screenshot%202025-08-22%20033848.png)
 
 ---
 
