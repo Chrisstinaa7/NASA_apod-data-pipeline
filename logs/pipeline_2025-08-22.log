@@ -1,0 +1,79 @@
+2025-08-22 03:30:26,993 - INFO - Starting NASA ETL Pipeline...
+2025-08-22 03:30:26,994 - INFO - Running upload_nasa.py ...
+2025-08-22 03:30:48,782 - INFO - [OK] NASA data saved locally as apod.json
+[OK] NASA data uploaded to Azure Blob Storage (nasa-raw/apod.json)
+2025-08-22 03:30:48,782 - INFO - Running process_nasa.py ...
+2025-08-22 03:30:51,076 - INFO - [OK] Container 'nasa-processed' already exists.
+[OK] Processed data saved locally as apod_processed.json
+[OK] Processed data uploaded to Azure Blob Storage (nasa-processed/apod_processed.json)
+2025-08-22 03:30:51,076 - INFO - Running curate_nasa.py ...
+2025-08-22 03:30:53,452 - INFO - [OK] Container 'nasa-curated' already exists.
+[OK] Curated CSV saved locally as apod_curated.csv
+[OK] Curated CSV uploaded to Azure Blob Storage (nasa-curated/apod_curated.csv)
+2025-08-22 03:30:53,452 - INFO - Pipeline finished.
+2025-08-22 14:07:27,349 - INFO - Starting NASA ETL Pipeline...
+2025-08-22 14:07:27,356 - INFO - Running upload_nasa.py ...
+2025-08-22 14:07:39,077 - INFO - [OK] NASA data saved locally as apod.json
+[OK] NASA data uploaded to Azure Blob Storage (nasa-raw/apod.json)
+2025-08-22 14:07:39,078 - INFO - Running process_nasa.py ...
+2025-08-22 14:07:41,163 - INFO - [OK] Container 'nasa-processed' already exists.
+[OK] Processed data saved locally as apod_processed.json
+[OK] Processed data uploaded to Azure Blob Storage (nasa-processed/apod_processed.json)
+2025-08-22 14:07:41,163 - INFO - Running curate_nasa.py ...
+2025-08-22 14:07:41,729 - ERROR - Error in curate_nasa.py: Traceback (most recent call last):
+  File "C:\Users\peace\DE\curate_nasa.py", line 71, in <module>
+    curate_nasa_data()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\peace\DE\curate_nasa.py", line 15, in curate_nasa_data
+    blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)
+  File "C:\Users\peace\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\storage\blob\_blob_service_client.py", line 184, in from_connection_string
+    account_url, secondary, credential = parse_connection_str(conn_str, credential, 'blob')
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peace\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\storage\blob\_shared\base_client.py", line 421, in parse_connection_str
+    raise ValueError("Connection string is either blank or malformed.")
+ValueError: Connection string is either blank or malformed.
+2025-08-22 14:07:41,729 - INFO - Pipeline finished.
+2025-08-22 14:08:18,094 - INFO - Starting NASA ETL Pipeline...
+2025-08-22 14:08:18,094 - INFO - Running upload_nasa.py ...
+2025-08-22 14:08:21,966 - INFO - [OK] NASA data saved locally as apod.json
+[OK] NASA data uploaded to Azure Blob Storage (nasa-raw/apod.json)
+2025-08-22 14:08:21,967 - INFO - Running process_nasa.py ...
+2025-08-22 14:08:25,384 - INFO - [OK] Container 'nasa-processed' already exists.
+[OK] Processed data saved locally as apod_processed.json
+[OK] Processed data uploaded to Azure Blob Storage (nasa-processed/apod_processed.json)
+2025-08-22 14:08:25,384 - INFO - Running curate_nasa.py ...
+2025-08-22 14:08:25,947 - ERROR - Error in curate_nasa.py: Traceback (most recent call last):
+  File "C:\Users\peace\DE\curate_nasa.py", line 71, in <module>
+    curate_nasa_data()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\peace\DE\curate_nasa.py", line 15, in curate_nasa_data
+    blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)
+  File "C:\Users\peace\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\storage\blob\_blob_service_client.py", line 184, in from_connection_string
+    account_url, secondary, credential = parse_connection_str(conn_str, credential, 'blob')
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peace\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\storage\blob\_shared\base_client.py", line 421, in parse_connection_str
+    raise ValueError("Connection string is either blank or malformed.")
+ValueError: Connection string is either blank or malformed.
+2025-08-22 14:08:25,948 - INFO - Pipeline finished.
+2025-08-22 14:25:22,978 - INFO - Starting NASA ETL Pipeline...
+2025-08-22 14:25:23,093 - INFO - Running upload_nasa.py ...
+2025-08-22 14:28:26,706 - INFO - [OK] NASA data saved locally as apod.json
+[OK] NASA data uploaded to Azure Blob Storage (nasa-raw/apod.json)
+2025-08-22 14:28:26,706 - INFO - Running process_nasa.py ...
+2025-08-22 14:29:19,340 - INFO - [OK] Container 'nasa-processed' already exists.
+[OK] Processed data saved locally as apod_processed.json
+[OK] Processed data uploaded to Azure Blob Storage (nasa-processed/apod_processed.json)
+2025-08-22 14:29:19,340 - INFO - Running curate_nasa.py ...
+2025-08-22 14:29:48,031 - ERROR - Error in curate_nasa.py: Traceback (most recent call last):
+  File "C:\Users\peace\DE\curate_nasa.py", line 71, in <module>
+    curate_nasa_data()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\peace\DE\curate_nasa.py", line 15, in curate_nasa_data
+    blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)
+  File "C:\Users\peace\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\storage\blob\_blob_service_client.py", line 184, in from_connection_string
+    account_url, secondary, credential = parse_connection_str(conn_str, credential, 'blob')
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\peace\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\storage\blob\_shared\base_client.py", line 421, in parse_connection_str
+    raise ValueError("Connection string is either blank or malformed.")
+ValueError: Connection string is either blank or malformed.
+2025-08-22 14:29:48,031 - INFO - Pipeline finished.

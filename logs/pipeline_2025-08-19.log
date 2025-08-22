@@ -1,0 +1,13 @@
+2025-08-19 22:10:27,986 - INFO - Starting NASA ETL Pipeline...
+2025-08-19 22:10:27,987 - INFO - Running upload_nasa.py ...
+2025-08-19 22:10:52,827 - INFO - [OK] NASA data saved locally as apod.json
+[OK] NASA data uploaded to Azure Blob Storage (nasa-raw/apod.json)
+2025-08-19 22:10:52,827 - INFO - Running process_nasa.py ...
+2025-08-19 22:11:00,909 - INFO - [OK] Container 'nasa-processed' already exists.
+[OK] Processed data saved locally as apod_processed.json
+[OK] Processed data uploaded to Azure Blob Storage (nasa-processed/apod_processed.json)
+2025-08-19 22:11:00,910 - INFO - Running curate_nasa.py ...
+2025-08-19 22:11:07,411 - INFO - [OK] Container 'nasa-curated' already exists.
+[OK] Curated CSV saved locally as apod_curated.csv
+[OK] Curated CSV uploaded to Azure Blob Storage (nasa-curated/apod_curated.csv)
+2025-08-19 22:11:07,411 - INFO - Pipeline finished.
